@@ -1,3 +1,23 @@
+# Project Description 
+Basic node application that retrieves data to/from mongodb.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+"NodeJs": "v8.11.2"
+"express": "~4.16.0"
+"mongodb": "^3.0.5"
+"jade": "~1.11.0" or "pug": "^2.0.3"
+"monk": "^6.0.6"
+"nodemon" : "1.17.5"
+```
+
 To start the server
 	➜ Navigate to rootfolder ie., nodetest1 (located in Documents\projects\) ➜ npm start
 
