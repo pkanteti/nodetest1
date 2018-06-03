@@ -17,22 +17,36 @@ What things you need to install the software and how to install them
 "monk": "^6.0.6"
 "nodemon" : "1.17.5"
 ```
+### Reference Links
+* https://closebrace.com/tutorials/2017-03-02/the-dead-simple-step-by-step-guide-for-front-end-developers-to-getting-up-and-running-with-nodejs-express-and-mongodb
+* https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/?_ga=2.106960139.829613724.1527998495-663949213.1527998495
+* https://closebrace.com/cheatsheetthanks
+* https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
 
-To start the server
-	➜ Navigate to rootfolder ie., nodetest1 (located in Documents\projects\) ➜ npm start
+## Scripts required for running the app
 
+### To start the server
+
+Navigate to rootfolder ie., nodetest1 (located in Documents\projects\)
+```
+npm start
+```
+
+### Auto refresh/start the server or listen to the changes
 
 To auto re-start the node server when changes are made to the project files
-	➜ Navigate to rootfolder ie., nodetest1 (located in Documents\projects\) ➜ nodemon app.js
+```
+nodemon app.js
+```
 
+### Work with Mongodb
 
-To start the mongodb server
-	➜ Navigate to Mongodb bin folder (Documents\projects\mongodb-osx-x86_64-3.6.5\bin), then run below command
-		➜ bin mongod --dbpath /Users/prudhvi/Documents/projects/nodetest1/data
+To start the mongodb server, Navigate to Mongodb bin folder (Documents\projects\mongodb-osx-x86_64-3.6.5\bin), then run below command
+```
+mongod --dbpath /Users/prudhvi/Documents/projects/nodetest1/data
+```
 
-
-To work with mongo db 
-	➜ Navigate to Mongodb bin folder (Documents\projects\mongodb-osx-x86_64-3.6.5\bin), then run below command
+To work with mongo db, Navigate to Mongodb bin folder (Documents\projects\mongodb-osx-x86_64-3.6.5\bin), then run below command
 		➜ bin mongo
 		Once connection is established
 			➜ use nodetest1 (db name in mongodb)
@@ -43,3 +57,13 @@ To work with mongo db
 			➜ db.usercollection.insert(newstuff);
 		Pretty print
 			➜ db.usercollection.find().pretty()
+
+
+
+## Authors
+
+* **Prudhvi Kanteti** - *Initial work* - [Nodetest1 App](https://github.com/pkanteti/nodetest1)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
