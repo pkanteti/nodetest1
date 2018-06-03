@@ -81,12 +81,10 @@ db.usercollection.find().pretty()
 
 ## Links to access the app (localhost)
 
-```
-* **http://localhost:3000/
-* **http://localhost:3000/helloworld
-* **http://localhost:3000/userlist
-* **http://localhost:3000/adduser
-```
+* http://localhost:3000/
+* http://localhost:3000/helloworld
+* http://localhost:3000/userlist
+* http://localhost:3000/adduser
 
 ## Authors
 
