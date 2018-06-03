@@ -69,8 +69,8 @@ db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdo
 Write multiple records to db
 
 ```
-* newstuff = [{ "username" : "testuser2", "email" : "testuser2@testdomain.com" }, { "username" : "testuser3", "email" : "testuser3@testdomain.com" }]
-* db.usercollection.insert(newstuff);
+* ** newstuff = [{ "username" : "testuser2", "email" : "testuser2@testdomain.com" }, { "username" : "testuser3", "email" : "testuser3@testdomain.com" }]
+* ** db.usercollection.insert(newstuff);
 ```
 
 Pretty print
@@ -82,10 +82,10 @@ db.usercollection.find().pretty()
 ## Links to access the app (localhost)
 
 ```
-* http://localhost:3000/
-* http://localhost:3000/helloworld
-* http://localhost:3000/userlist
-* http://localhost:3000/adduser
+* ** http://localhost:3000/
+* ** http://localhost:3000/helloworld
+* ** http://localhost:3000/userlist
+* ** http://localhost:3000/adduser
 ```
 
 ## Authors
