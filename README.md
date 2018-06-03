@@ -21,8 +21,7 @@ What things you need to install the software and how to install them
 * https://closebrace.com/tutorials/2017-03-02/the-dead-simple-step-by-step-guide-for-front-end-developers-to-getting-up-and-running-with-nodejs-express-and-mongodb
 * https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/?_ga=2.106960139.829613724.1527998495-663949213.1527998495
 * https://closebrace.com/cheatsheetthanks
-* https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
-* Raw: https://gist.githubusercontent.com/PurpleBooth/109311bb0361f32d87a2/raw/8254b53ab8dcb18afc64287aaddd9e5b6059f880/README-Template.md
+* https://gist.github.com/PurpleBooth/109311bb0361f32d87a2 (Raw: https://gist.githubusercontent.com/PurpleBooth/109311bb0361f32d87a2/raw/8254b53ab8dcb18afc64287aaddd9e5b6059f880/README-Template.md )
 
 ## Scripts required for running the app
 
