@@ -42,23 +42,42 @@ nodemon app.js
 ### Work with Mongodb
 
 To start the mongodb server, Navigate to Mongodb bin folder (Documents\projects\mongodb-osx-x86_64-3.6.5\bin), then run below command
+
 ```
 mongod --dbpath /Users/prudhvi/Documents/projects/nodetest1/data
 ```
 
 To work with mongo db, Navigate to Mongodb bin folder (Documents\projects\mongodb-osx-x86_64-3.6.5\bin), then run below command
-		➜ bin mongo
-		Once connection is established
-			➜ use nodetest1 (db name in mongodb)
-		Write data to db
-			➜ db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
-		Write multiple to db
-			➜ newstuff = [{ "username" : "testuser2", "email" : "testuser2@testdomain.com" }, { "username" : "testuser3", "email" : "testuser3@testdomain.com" }]
-			➜ db.usercollection.insert(newstuff);
-		Pretty print
-			➜ db.usercollection.find().pretty()
 
+```
+bin mongo
+```
+		
+Once connection is established, create the db. If the db does not exist, a new db with that name will be created
 
+```
+use nodetest1
+
+```
+		
+Write data to db
+
+```
+db.usercollection.insert({ "username" : "testuser1", "email" : "testuser1@testdomain.com" })
+```
+
+Write multiple records to db
+
+```
+* newstuff = [{ "username" : "testuser2", "email" : "testuser2@testdomain.com" }, { "username" : "testuser3", "email" : "testuser3@testdomain.com" }]
+* db.usercollection.insert(newstuff);
+```
+
+Pretty print
+
+```
+db.usercollection.find().pretty()
+```
 
 ## Authors
 
