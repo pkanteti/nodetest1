@@ -11,7 +11,7 @@ router.get('/helloworld', function(req, res) {
 	res.render('helloworld', {title: 'Hello World!'});
 });
 
-/* GET Userlist page. */
+/* GET Userlist from db and render on the page. */
 router.get('/userlist', function(req, res) {
 	var db = req.db;
   var collection = db.get('usercollection');
@@ -26,7 +26,7 @@ router.get('/newuser', function(req, res) {
 	res.render('newuser', { title: 'Add New User' });
 });
 
-/* POST to Add User Service */
+/* POST to Add User Service - adds data to db and redirects to user list */
 router.post('/adduser', function(req, res) {
 
     // Set our internal DB variable
@@ -54,6 +54,8 @@ router.post('/adduser', function(req, res) {
         }
     });
 });
+
+
 
 
 module.exports = router;
