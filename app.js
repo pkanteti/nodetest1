@@ -14,7 +14,7 @@ var monk = require('monk');
 //get the hook to db from mLab Mongo
 	// Standard URI format: mongodb://[dbuser:dbpassword@]host:port/dbname
 	var uri = 'mongodb://heroku_cwntx8n9:ttg2pro7osoaia4tm2pra6o74f@ds247690.mlab.com:47690/heroku_cwntx8n9';
-	mongodb.MongoClient.connect(uri, function(err, client) {
+	mongo.MongoClient.connect(uri, function(err, client) {
 		if(err) throw err;
 
 		var db = client.db('heroku_cwntx8n9');
