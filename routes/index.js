@@ -30,6 +30,7 @@ router.get('/newuser', function(req, res) {
 router.post('/adduser', function(req, res) {
 
     // Set our internal DB variable
+    console.log('db is available'+ req.db);
     var db = req.db;
 
     // Get our form values. These rely on the "name" attributes
