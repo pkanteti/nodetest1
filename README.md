@@ -79,6 +79,15 @@ Pretty print
 db.usercollection.find().pretty()
 ```
 
+## Links to access the app (localhost)
+
+```
+* http://localhost:3000/
+* http://localhost:3000/helloworld
+* http://localhost:3000/userlist
+* http://localhost:3000/adduser
+```
+
 ## Authors
 
 * **Prudhvi Kanteti** - *Initial work* - [Nodetest1 App](https://github.com/pkanteti/nodetest1)
