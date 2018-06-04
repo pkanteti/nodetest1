@@ -20,6 +20,7 @@ router.get('/userlist', function(req, res) {
   // 		"userlist": docs
   // 	});
   // });
+  //retrieve the data from mongodb and pass it to userlist.jade file
   collection.find().toArray(function(err, docs) {
   	if(err) throw err;
 
