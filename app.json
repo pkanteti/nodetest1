@@ -1,0 +1,9 @@
+{
+  "environments": {
+    "test": {
+      "env": {
+        "variable1": "value1"
+      }
+    }
+  }
+}
