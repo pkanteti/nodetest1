@@ -86,6 +86,14 @@ db.usercollection.find().pretty()
 * http://localhost:3000/userlist
 * http://localhost:3000/adduser
 
+## Links to access the app (Heroku - Local)
+* http://localhost:5000/userlist
+* http://localhost:5000/newuser
+
+## Links to access the app (Heroku - Remote)
+* https://nodetest1-kpk.herokuapp.com/userlist
+* https://nodetest1-kpk.herokuapp.com/newuser
+
 ## Authors
 
 * **Prudhvi Kanteti** - *Initial work* - [Nodetest1 App](https://github.com/pkanteti/nodetest1)
