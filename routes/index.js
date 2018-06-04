@@ -14,7 +14,7 @@ router.get('/helloworld', function(req, res) {
 /* GET Userlist from db and render on the page. */
 router.get('/userlist', function(req, res) {
 	var db = req.db;
-  var collection = db.get('usercollection');
+  var collection = db.collection('usercollection');
   collection.find({},{},function(e, docs){
   	res.render('userlist', {
   		"userlist": docs
@@ -38,7 +38,7 @@ router.post('/adduser', function(req, res) {
     var userEmail = req.body.useremail;
 
     // Set our collection
-    var collection = db.get('usercollection');
+    var collection = db.collection('usercollection');
 
     // Submit to the DB
     collection.insert({
