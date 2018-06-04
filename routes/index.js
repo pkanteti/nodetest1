@@ -15,7 +15,14 @@ router.get('/helloworld', function(req, res) {
 router.get('/userlist', function(req, res) {
 	var db = req.db;
   var collection = db.collection('usercollection');
-  collection.find({},{},function(e, docs){
+  // collection.find({},{},function(e, docs){
+  // 	res.render('userlist', {
+  // 		"userlist": docs
+  // 	});
+  // });
+  collection.find().toArray(function(err, docs) {
+  	if(err) throw err;
+
   	res.render('userlist', {
   		"userlist": docs
   	});
