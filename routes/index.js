@@ -23,6 +23,12 @@ router.get('/userlist', function(req, res) {
   collection.find().toArray(function(err, docs) {
   	if(err) throw err;
 
+  	docs.forEach(function (doc) {
+			console.log(
+			  'This is ' + doc['username'] + ', ' + doc['email']
+			);
+		});
+
   	res.render('userlist', {
   		"userlist": docs
   	});
