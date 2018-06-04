@@ -3,8 +3,7 @@ extends layout
 block content
 	h1.
 		User List
-		userlist
 	ul
 		each user, i in userlist
 			li
-				user.username
+				a(href="mailto:#{user.username}")= user.username

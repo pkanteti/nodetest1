@@ -15,24 +15,24 @@ router.get('/helloworld', function(req, res) {
 router.get('/userlist', function(req, res) {
 	var db = req.db;
   var collection = db.collection('usercollection');
-  // collection.find({},{},function(e, docs){
-  // 	res.render('userlist', {
-  // 		"userlist": docs
-  // 	});
-  // });
-  collection.find().toArray(function(err, docs) {
-  	if(err) throw err;
-
-  	docs.forEach(function (doc) {
-			console.log(
-			  'This is ' + doc['username'] + ', ' + doc['email']
-			);
-		});
-
+  collection.find({},{},function(e, docs){
   	res.render('userlist', {
   		"userlist": docs
   	});
   });
+  // collection.find().toArray(function(err, docs) {
+  // 	if(err) throw err;
+
+  // 	docs.forEach(function (doc) {
+		// 	console.log(
+		// 	  'This is ' + doc['username'] + ', ' + doc['email']
+		// 	);
+		// });
+
+  // 	res.render('userlist', {
+  // 		"userlist": docs
+  // 	});
+  // });
 });
 
 router.get('/newuser', function(req, res) {
