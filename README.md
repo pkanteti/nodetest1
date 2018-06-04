@@ -87,6 +87,12 @@ db.usercollection.find().pretty()
 * http://localhost:3000/adduser
 
 ## Links to access the app (Heroku - Local)
+### Running the server locally
+```
+heroku web local
+```
+
+### URLs to access the app
 * http://localhost:5000/userlist
 * http://localhost:5000/newuser
 
