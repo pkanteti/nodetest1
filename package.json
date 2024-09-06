@@ -6,17 +6,17 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "constantinople": "^3.1.2",
+    "constantinople": "^4.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "jstransformer": "^1.0.0",
-    "mongodb": "^3.0.5",
+    "mongodb": "^3.3.0",
     "monk": "^6.0.6",
     "morgan": "~1.9.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "serve-favicon": "^2.5.0"
   },
   "engines": {
